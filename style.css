@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 66.5%;
+}
+body {
+  background-image: linear-gradient(to bottom, #8e2de2, #4a00e0);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.container {
+  min-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.4rem;
+  padding: 2rem;
+  /* background-color: azure; */
+  background-image: linear-gradient(to bottom, #8a2387, #e94057, #f27121);
+  box-shadow: 4px 4px 6px black;
+}
+.heading {
+  margin: 1rem auto;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+input {
+  display: block;
+  width: 70%;
+  height: 3rem;
+  margin: 2rem auto;
+  border: 3px solid rgb(23, 63, 4);
+  border-radius: 20px;
+  background-color: rgb(209, 190, 243);
+  outline: none;
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  transition: border-color 0.48s ease;
+  transition: transform 0.48s ease;
+}
+input:focus,
+#result:focus {
+  border-color: yellow;
+  transform: scale(1.1);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sbtn {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+button {
+  border: 2px solid rgb(123, 255, 0);
+  border-radius: 0.5rem;
+  /* padding: 0.5rem 1rem; */
+  width: 7rem;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  background-color: rgb(51, 201, 46);
+  font-weight: 600;
+  margin: auto;
+  display: block;
+  outline: none;
+  color: white;
+  transition: all 0.1s ease;
+  box-shadow: 3px 3px 6px black;
+}
+.btn_red {
+  border-color: #ff0000fd;
+
+  background-color: rgba(219, 19, 19, 0.932);
+}
+button:active {
+  box-shadow: 3px 2px 6px black;
+  transform: translateY(2px);
+}
+#result {
+  background-color: aliceblue;
+  border-color: blue;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 54%;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    min-width: 90%;
+  }
+}
