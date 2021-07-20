@@ -19,17 +19,20 @@ main {
 }
 .container {
   min-width: 28rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border-radius: 1.4rem;
   padding: 2rem;
   /* background-color: azure; */
   background-image: linear-gradient(to bottom, #8a2387, #e94057, #f27121);
   box-shadow: 4px 4px 6px black;
 }
+.switcher {
+  display: flex;
+  flex-direction: row;
+}
+
 .heading {
-  margin: 1rem auto;
+  margin: auto;
+  margin-bottom: 1.5rem;
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
@@ -59,6 +62,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .sbtn {
   display: flex;
@@ -93,6 +97,40 @@ button:active {
 #result {
   background-color: aliceblue;
   border-color: blue;
+}
+.swbtn {
+  width: 48%;
+  border-radius: 0;
+}
+
+.viewer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textv {
+  margin: 1.5rem;
+  border: 2px solid rgb(94, 255, 0);
+  background-color: #071777;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  outline: none;
+  transition: border-color 0.8s ease;
+  transition: transform 0.8s ease;
+}
+.textv:focus {
+  transform: scale(1.05);
+  border-color: rgb(255, 238, 0);
+}
+.converter {
+  display: none;
+  flex-direction: column;
+}
+
+.shower {
+  display: flex;
 }
 
 @media (max-width: 400px) {
