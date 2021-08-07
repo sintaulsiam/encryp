@@ -1,25 +1,37 @@
-"use strict";
+// Author Md sintaul mahdi siam 
+// Date 22/6/2021
 
+"use strict"; 
+
+//fild selection 
 const encryptFild = document.querySelector("#encry");
 const decryptFild = document.querySelector("#decry");
 const resultFild = document.querySelector("#result");
+const viewer = document.querySelector(".viewer");
 
+//button selection 
 const encryptBtn = document.querySelector("#ebtn");
 const decryptBtn = document.querySelector("#dbtn");
+const resetbtn = document.querySelectorAll("#rbtn");
+
+//copy btn section
 const encryptcBtn = document.querySelector("#ecbtn");
 const decryptcBtn = document.querySelector("#dcbtn");
 const resultcBtn = document.querySelector("#rcbtn");
-const resetbtn = document.querySelectorAll("#rbtn");
 
+//converter switcher btn
 const sencrypt = document.querySelector(".sencrypt");
 const sview = document.querySelector(".sview");
 
+//Encrypter view 
 const converter = document.querySelector(".converter");
-const viewer = document.querySelector(".viewer");
 
+//Decrypter view
 const txtview = document.querySelector("#txtview");
+//copy btn
 const txtviewcBtn = document.querySelector("#tvcbtn");
 
+//
 sencrypt.classList.add("btn_red");
 converter.classList.add("shower");
 
