@@ -1,15 +1,15 @@
-// Author Md sintaul mahdi siam 
+// Author Md sintaul mahdi siam
 // Date 22/6/2021
 
-"use strict"; 
+"use strict";
 
-//fild selection 
+//fild selection
 const encryptFild = document.querySelector("#encry");
 const decryptFild = document.querySelector("#decry");
 const resultFild = document.querySelector("#result");
 const viewer = document.querySelector(".viewer");
 
-//button selection 
+//button selection
 const encryptBtn = document.querySelector("#ebtn");
 const decryptBtn = document.querySelector("#dbtn");
 const resetbtn = document.querySelectorAll("#rbtn");
@@ -23,7 +23,7 @@ const resultcBtn = document.querySelector("#rcbtn");
 const sencrypt = document.querySelector(".sencrypt");
 const sview = document.querySelector(".sview");
 
-//Encrypter view 
+//Encrypter view
 const converter = document.querySelector(".converter");
 
 //Decrypter view
@@ -36,7 +36,7 @@ sencrypt.classList.add("btn_red");
 converter.classList.add("shower");
 
 const encrypKey =
-  "w*+=ecv'bnmi;opaqsdfgIjkMhVCBGFD_-SAPXZLK!JHN#O67845~U19rtyu.l@zx%^YT20$3,REWQ@:".split(
+  "abcdstSTUVWXuvLMzA3456789w,. BCDEFGHIJKNOPQRxy~!@#$%^*_-+=';efghijklmnopqrYZ&012".split(
     ""
   );
 
