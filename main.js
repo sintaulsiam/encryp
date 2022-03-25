@@ -32,7 +32,7 @@ const txtview = document.querySelector("#txtview");
 const txtviewcBtn = document.querySelector("#tvcbtn");
 
 //
-sencrypt.classList.add("btn_red");
+sencrypt.classList.add("btn_green");
 converter.classList.add("shower");
 
 const encrypKey =
@@ -118,8 +118,8 @@ let visible = true;
 
 sencrypt.addEventListener("click", function () {
   if (!visible) {
-    sencrypt.classList.add("btn_red");
-    sview.classList.remove("btn_red");
+    sencrypt.classList.add("btn_green");
+    sview.classList.remove("btn_green");
     converter.classList.add("shower");
     viewer.classList.remove("shower");
     visible = true;
@@ -128,8 +128,8 @@ sencrypt.addEventListener("click", function () {
 
 sview.addEventListener("click", function () {
   if (visible) {
-    sview.classList.add("btn_red");
-    sencrypt.classList.remove("btn_red");
+    sview.classList.add("btn_green");
+    sencrypt.classList.remove("btn_green");
     viewer.classList.add("shower");
     converter.classList.remove("shower");
     visible = false;
