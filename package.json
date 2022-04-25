@@ -4,7 +4,7 @@
   "description": "This is  a simple text encrypter",
   "main": "main.js",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel index.html",
     "build": "parcel build"
   },
   "repository": {
