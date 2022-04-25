@@ -2,10 +2,9 @@
   "name": "encryp",
   "version": "1.0.0",
   "description": "This is  a simple text encrypter",
-  "main": "main.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
