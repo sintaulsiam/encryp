@@ -2,6 +2,12 @@
 // Date 22/6/2021
 
 "use strict";
+import SimpleCrypto from "simple-crypto-js";
+
+//setting up crypto
+
+const secretKey = "AlightWas100$Far";
+const simpleCrypto = new SimpleCrypto(secretKey);
 
 //fild selection
 const encryptFild = document.querySelector("#encry");
@@ -35,16 +41,6 @@ const txtviewcBtn = document.querySelector("#tvcbtn");
 sencrypt.classList.add("btn_green");
 converter.classList.add("shower");
 
-const encrypKey =
-  "abcdstSTUVWXuvLMzA3456789w,. BCDEFGHIJKNOPQRxy~!@#$%^*_-+=';efghijklmnopqrYZ&012".split(
-    ""
-  );
-
-const alpha =
-  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&0123456789~!@#$%^*_-+=';,. ".split(
-    ""
-  );
-
 const copyTxt = function (textfild) {
   if (textfild.value) {
     textfild.select();
@@ -55,19 +51,10 @@ const copyTxt = function (textfild) {
 
 encryptBtn.addEventListener("click", function () {
   if (encryptFild.value) {
-    let resultText = [];
-    const txt = encryptFild.value.trim().split("");
-    txt.forEach(function (c, i) {
-      let n = alpha.findIndex((val) => val == c);
-      if (n >= 0) {
-        resultText.push(encrypKey[n]);
-      } else {
-        resultText.push(txt[i]);
-      }
-      encryptFild.value = "";
-      resultFild.value = resultText.join("");
-      copyTxt(resultFild);
-    });
+    const txt = encryptFild.value.trim();
+    const resultText = simpleCrypto.encrypt(txt);
+    encryptFild.value = "";
+    resultFild.value = resultText;
   } else {
     encryptFild.focus();
   }
@@ -75,19 +62,13 @@ encryptBtn.addEventListener("click", function () {
 
 decryptBtn.addEventListener("click", function () {
   if (decryptFild.value) {
-    let resultText = [];
-    const txt = decryptFild.value.trim().split("");
-    txt.forEach(function (c, i) {
-      let n = encrypKey.findIndex((val) => val == c);
-      if (n >= 0) {
-        resultText.push(alpha[n]);
-      } else {
-        resultText.push(txt[i]);
-      }
-      // decryptFild.value = "";
-      txtview.value = resultText.join("");
-      // copyTxt(txtview);
-    });
+    const txt = decryptFild.value.trim();
+    console.log(txt);
+    let resultText = simpleCrypto.decrypt(txt);
+
+    // decryptFild.value = "";
+    txtview.value = resultText;
+    // copyTxt(txtview);
   } else {
     decryptFild.focus();
   }
