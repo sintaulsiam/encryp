@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sintaulsiam/encryp#readme",
   "dependencies": {
+    "babel": "^6.23.0",
     "simple-crypto-js": "^3.0.1",
     "simple-encrypter": "^0.0.6"
   },
