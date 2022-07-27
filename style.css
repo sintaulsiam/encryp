@@ -110,6 +110,7 @@ button:active {
   border-radius: 0;
   background-color: rgba(219, 19, 19, 0.932);
   border-color: #ff0000fd;
+  border-radius: 4px;
 }
 
 .viewer {
@@ -128,6 +129,7 @@ button:active {
   outline: none;
   transition: border-color 0.8s ease;
   transition: transform 0.8s ease;
+  border-radius: 7px;
 }
 .textv:focus {
   transform: scale(1.05);
