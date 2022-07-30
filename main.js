@@ -92,6 +92,8 @@ resetbtn.forEach(function (v) {
     decryptFild.value = "";
     resultFild.value = "";
     txtview.value = "";
+    txtview.setAttribute("style", "");
+    encryptFild.setAttribute("style", "");
   });
 });
 
