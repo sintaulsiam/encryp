@@ -2,6 +2,7 @@
   "name": "encryp",
   "version": "1.0.0",
   "description": "This is  a simple text encrypter",
+  "browserlist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -17,11 +18,10 @@
   },
   "homepage": "https://github.com/sintaulsiam/encryp#readme",
   "dependencies": {
-    "babel": "^6.23.0",
     "simple-crypto-js": "^3.0.1",
     "simple-encrypter": "^0.0.6"
   },
   "devDependencies": {
-    "parcel": "^2.5.0"
+    "parcel": "^2.7.0"
   }
 }
